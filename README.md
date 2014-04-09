@@ -1,4 +1,4 @@
 magicBinome
 ===========
 
-Application Angular JS poru faire des binômes
+Application Angular JS pour faire des binômes
