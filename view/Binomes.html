@@ -40,7 +40,14 @@
             <h2>Binômes</h2>
             <div class="panel panel-primary" data-ng-repeat="binome in binomes">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Binôme {{$index + 1}}</h3>
+                    <h3 class="panel-title">
+                        <ng-pluralize
+                            count="binome.length"
+                            when="{'2': 'Binôme',
+                                   '3': 'Trinôme',
+                                   'other': '{} personnes'}">
+                        </ng-pluralize>
+                    </h3>
                 </div>
                 <div class="panel-body">
                     <ul class="Binome list-group">
