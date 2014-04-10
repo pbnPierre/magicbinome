@@ -7,21 +7,26 @@
             Un super truc génial pour faire des binômes de test
         </p>
         <div class="row">
-            <div class="col-md-6" id="addBox">
+            <div class="col-md-4" id="addBox">
                 <h2>Ajouter un dev</h2>
-                <div class="container">
-                    <div class="form-group">
-                        <input class="form-control"  type="text" data-ng-model="userName" />
-                    </div>
-                    <button class="btn btn-lg btn-primary" type="submit" data-ng-click="addDev()">Ajouter un dev</button>
+                <div class="form-group">
+                    <input class="form-control"  type="text" data-ng-model="userName" />
                 </div>
+                <button class="btn btn-lg btn-primary" type="submit" data-ng-click="addDev()">Ajouter un dev</button>
             </div>
-            <div class="col-md-6" id="randomizeButton">
+            <div class="col-md-4" id="randomizeButton">
                 <h2>Mélanger</h2>
                 <p>
                     Shake moi tout ça pour faire de nouveaux binômes
                 </p>
                 <button type="button" class="btn btn-lg btn-primary" data-ng-click="randomize()">Shake ton booty</button>
+            </div>
+            <div class="col-md-4" id="randomizeButton">
+                <h2>Impression</h2>
+                <p>
+                    Tu veux mettre les binômes sur une feuille de papier pour afficher sur ton board cliques sur le bouton.
+                </p>
+                <button type="button" class="btn btn-lg btn-primary" data-ng-click="print()">Imprime les binômes</button>
             </div>
         </div>
     </div>

@@ -21,6 +21,11 @@
         $scope.randomize();
     }
     
+    $scope.print = function() {
+        window.print();
+    }
+    
+    
     $scope.addDev = function() {
         if ($scope.userName !== '' && typeof $scope.userName != 'undefined')
         {
