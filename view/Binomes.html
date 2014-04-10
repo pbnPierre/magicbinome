@@ -1,55 +1,55 @@
 ﻿<div class="jumbotron">
-	<div class="container">
-		<h1>
-			Magic Binômes
-		</h1>
-		<p>
-			Un super truc génial pour faire des binômes de test
-		</p>
-		<div class="row">
-			<div class="col-md-6" id="addBox">
-				<h2>Ajouter un dev</h2>
-				<div class="container">
-					<div class="form-group">
-						<input class="form-control"  type="text" data-ng-model="userName" />
-					</div>
-					<button class="btn btn-lg btn-primary" type="submit" data-ng-click="addDev()">Ajouter un dev</button>
-				</div>
-			</div>
-			<div class="col-md-6" id="randomizeButton">
-				<h2>Mélanger</h2>
-				<p>
-					Shake moi tout ça pour faire de nouveaux binômes
-				</p>
-				<button type="button" class="btn btn-lg btn-primary" data-ng-click="randomize()">Shake ton booty</button>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <h1>
+            Magic Binômes
+        </h1>
+        <p>
+            Un super truc génial pour faire des binômes de test
+        </p>
+        <div class="row">
+            <div class="col-md-6" id="addBox">
+                <h2>Ajouter un dev</h2>
+                <div class="container">
+                    <div class="form-group">
+                        <input class="form-control"  type="text" data-ng-model="userName" />
+                    </div>
+                    <button class="btn btn-lg btn-primary" type="submit" data-ng-click="addDev()">Ajouter un dev</button>
+                </div>
+            </div>
+            <div class="col-md-6" id="randomizeButton">
+                <h2>Mélanger</h2>
+                <p>
+                    Shake moi tout ça pour faire de nouveaux binômes
+                </p>
+                <button type="button" class="btn btn-lg btn-primary" data-ng-click="randomize()">Shake ton booty</button>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="container">
-	<div class="row">
-		<div class="col-md-6" id="devs">
-			<h2>Devs</h2>
-			<ul class="Binome list-group">
-				<li class="list-group-item" data-ng-repeat="person in users">
-					{{ person.name }} <button class="btn btn-xs btn-danger" data-ng-click="deleteDev($index)">Efface moi</button> 
-				</li>
-			</ul>
-		</div>
-		<div class="col-md-6" id="binomes">
-			<h2>Binômes</h2>
-			<div class="panel panel-primary" data-ng-repeat="binome in binomes">
-				<div class="panel-heading">
-					<h3 class="panel-title">Binôme {{$index + 1}}</h3>
-				</div>
-				<div class="panel-body">
-					<ul class="Binome list-group">
-						<li class="list-group-item" data-ng-repeat="person in binome">
-							{{ person.name }}
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-6" id="devs">
+            <h2>Devs</h2>
+            <ul class="Binome list-group">
+                <li class="list-group-item" data-ng-repeat="person in users">
+                    {{ person.name }} <button class="btn btn-xs btn-danger" data-ng-click="deleteDev($index)">Efface moi</button> 
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6" id="binomes">
+            <h2>Binômes</h2>
+            <div class="panel panel-primary" data-ng-repeat="binome in binomes">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Binôme {{$index + 1}}</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="Binome list-group">
+                        <li class="list-group-item" data-ng-repeat="person in binome">
+                            {{ person.name }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
