@@ -1,13 +1,13 @@
 ﻿BinomesApp.controller('BinomeRandomizeController', ['$scope', function ($scope) {
     $scope.binomes = [];
     $scope.users = [
-        { "name": "dodo" },
-        { "name": "pbn" },
-        { "name": "chouchou" },
-        { "name": "Tiphaine" },
+        { "name": "Dodo" },
+        { "name": "Pbn" },
+        { "name": "Chouchou" },
+        { "name": "Tiflettte" },
         { "name": "Pull opo" },
-        { "name": "Thierry" },
-        { "name": "Rémy" }
+        { "name": "Titi" },
+        { "name": "Tic" }
     ];
     
     // Function piquée sur le net pour faire un shuffle il doit y avoir mieux
